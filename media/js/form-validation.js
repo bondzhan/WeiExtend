@@ -96,32 +96,21 @@ var FormValidation = function () {
                 focusInvalid: false, // do not focus the last invalid input
                 ignore: "",
                 rules: {
-                    name: {
+                    nameTxt: {
                         minlength: 2,
                         required: true
                     },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    category: {
+                    imgDescTxt: {
                         required: true
                     },
-                    options1: {
+                    imgFileTxt: {
                         required: true
                     },
-                    options2: {
+                    imgCategorySel: {
                         required: true
                     },
-                    occupation: {
-                        minlength: 5,
-                    },
-                    membership: {
+                    keywordTxt: {
                         required: true
-                    },
-                    service: {
-                        required: true,
-                        minlength: 2
                     }
                 },
 
@@ -132,6 +121,18 @@ var FormValidation = function () {
                     service: {
                         required: "Please select  at least 2 types of Service",
                         minlength: jQuery.format("Please select  at least {0} types of Service")
+                    },
+                    nameTxt:{
+                        required:"请输入标题"
+                    },
+                    keywordTxt:{
+                        required:"请输入关键词"
+                    },
+                    imgFileTxt:{
+                        required:"请上传一张图片"
+                    },
+                    imgDescTxt:{
+                        required:"请输入描述内容"
                     }
                 },
 
