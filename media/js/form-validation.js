@@ -111,12 +111,15 @@ var FormValidation = function () {
                     },
                     keywordTxt: {
                         required: true
+                    },
+                    urlTxt: {
+                        required: true
                     }
                 },
 
                 messages: { // custom messages for radio buttons and checkboxes
-                    membership: {
-                        required: "Please select a Membership type"
+                    imgCategorySel: {
+                        required: "请选择类别"
                     },
                     service: {
                         required: "Please select  at least 2 types of Service",
@@ -133,6 +136,9 @@ var FormValidation = function () {
                     },
                     imgDescTxt:{
                         required:"请输入描述内容"
+                    },
+                    urlTxt:{
+                        required:"请输入原文链接"
                     }
                 },
 
@@ -181,6 +187,7 @@ var FormValidation = function () {
                 submitHandler: function (form) {
                     success2.show();
                     error2.hide();
+                    form.submit();
                 }
 
             });
