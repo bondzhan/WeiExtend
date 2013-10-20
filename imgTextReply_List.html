@@ -12,7 +12,7 @@
 
 	<meta charset="utf-8" />
 
-	<title>Metronic | Data Tables - Managed Tables</title>
+	<title>Wei-Extend</title>
 
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
@@ -596,7 +596,7 @@
 
 					<i class="icon-cogs"></i> 
 
-					<span class="title">基础设置</span>
+					<span class="title">自定义回复</span>
 
 					<span class="arrow open"></span>
 
@@ -606,15 +606,7 @@
 
 						<li >
 
-							<a href="layout_horizontal_sidebar_menu.html">
-
-							功能管理</a>
-
-						</li>
-
-						<li >
-
-							<a href="layout_horizontal_menu1.html">
+							<a href="focusReply_manage.html">
 
 							关注时回复</a>
 
@@ -622,7 +614,15 @@
 
 						<li >
 
-							<a href="layout_horizontal_menu2.html">
+							<a href="layout_horizontal_menu1.html">
+
+							回答不上回复</a>
+
+						</li>
+
+						<li >
+
+							<a href="textReply_List.html">
 
 							文本回复</a>
 
@@ -964,11 +964,11 @@
 							</li>
 
 							<li>
-								<a href="#">基础设置</a>
+								<a href="#">自定义回复</a>
 								<i class="icon-angle-right"></i>
 							</li>
 							<li>
-								<a href="imgTextReply_List.html">图文列表</a>
+								<a href="imgTextReply_List.html">图文回复</a>
 							</li>
 
 						</ul>
@@ -995,13 +995,15 @@
 
 							<div class="portlet-title">
 
-								<div class="caption"><i class="icon-cogs"></i>Table</div>
+								<div class="caption"><i class="icon-cogs"></i>图文回复</div>
 
 								<div class="actions">
 
 									<a href="imgTextReply_Manage.html" class="btn green"><i class="icon-plus"></i> Add</a>
 
-									<div class="btn-group">
+									<a href="imgTextReply_Manage.html" class="btn green"><i class="icon-trash"></i> Delete</a>
+
+									<!-- <div class="btn-group">
 
 										<a class="btn green" href="#" data-toggle="dropdown">
 
@@ -1025,7 +1027,7 @@
 
 										</ul>
 
-									</div>
+									</div> -->
 
 								</div>
 
@@ -1049,7 +1051,9 @@
 
 											<th class="hidden-480">原本链接</th>
 
-											<th class="hidden-480">图片</th>
+											<th class="hidden-480">封面</th>
+
+											<th class="hidden-480">操作</th>
 										</tr>
 
 									</thead>
@@ -1060,31 +1064,21 @@
 
 											<td><input type="checkbox" class="checkboxes" value="1" /></td>
 
-											<td>shuxer</td>
+											<td>介绍</td>
 
-											<td class="hidden-480"><a href="mailto:shuxer@gmail.com">shuxer@gmail.com</a></td>
+											<td class="hidden-480">你好 首页 hi</td>
 
-											<td><span class="label label-success">Approved</span></td>
+											<td>新闻资讯</td>
 
-											<td>shuxer</td>
+											<td><a href="#">http://www.google.com.hk</a></td>
 
-											<td>shuxer</td>
+											<td><img src="media/image/1.jpg" class="img-polaroid" style="width: 80px; height: 80px;"></td>
 
-										</tr>
-
-										<tr class="odd gradeX">
-
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-
-											<td>looper</td>
-
-											<td class="hidden-480"><a href="mailto:looper90@gmail.com">looper90@gmail.com</a></td>
-
-											<td><span class="label label-warning">Suspended</span></td>
-
-											<td>shuxer</td>
-
-											<td>shuxer</td>
+											<td>
+												<a href="#" class="btn mini black"><i class="icon-trash"></i>Delete</a>
+												<a href="#" class="btn mini purple"><i class="icon-edit"></i>Edit</a>
+												<a href="#" class="btn mini blue"><i class="icon-share"></i>预览</a>
+											</td>
 
 										</tr>
 
@@ -1092,31 +1086,21 @@
 
 											<td><input type="checkbox" class="checkboxes" value="1" /></td>
 
-											<td>userwow</td>
+											<td>十一活动</td>
 
-											<td class="hidden-480"><a href="mailto:userwow@yahoo.com">userwow@yahoo.com</a></td>
+											<td class="hidden-480">国庆</td>
 
-											<td><span class="label label-success">Approved</span></td>
+											<td>营销活动</td>
 
-											<td>shuxer</td>
+											<td><a href="#">http://www.taobao.com</a></td>
 
-											<td>shuxer</td>
+											<td><img src="media/image/2.jpg" class="img-polaroid" style="width: 80px; height: 80px;"></td>
 
-										</tr>
-
-										<tr class="odd gradeX">
-
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-
-											<td>user1wow</td>
-
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">userwow@gmail.com</a></td>
-
-											<td><span class="label label-inverse">Blocked</span></td>
-
-											<td>shuxer</td>
-
-											<td>shuxer</td>
+											<td>
+												<a href="#" class="btn mini black"><i class="icon-trash"></i>Delete</a>
+												<a href="#" class="btn mini purple"><i class="icon-edit"></i>Edit</a>
+												<a href="#" class="btn mini blue"><i class="icon-share"></i>预览</a>
+											</td>
 
 										</tr>
 
@@ -1124,31 +1108,21 @@
 
 											<td><input type="checkbox" class="checkboxes" value="1" /></td>
 
-											<td>restest</td>
+											<td>会员促销</td>
 
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">test@gmail.com</a></td>
+											<td class="hidden-480">会员 优惠</td>
 
-											<td><span class="label label-success">Approved</span></td>
+											<td>营销活动</td>
 
-											<td>shuxer</td>
+											<td><a href="#">http://www.jd.com</a></td>
 
-											<td>shuxer</td>
+											<td><img src="media/image/3.jpg" class="img-polaroid" style="width: 80px; height: 80px;"></td>
 
-										</tr>
-
-										<tr class="odd gradeX">
-
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-
-											<td>foopl</td>
-
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">good@gmail.com</a></td>
-
-											<td><span class="label label-success">Approved</span></td>
-
-											<td>shuxer</td>
-
-											<td>shuxer</td>
+											<td>
+												<a href="#" class="btn mini black"><i class="icon-trash"></i>Delete</a>
+												<a href="#" class="btn mini purple"><i class="icon-edit"></i>Edit</a>
+												<a href="#" class="btn mini blue"><i class="icon-share"></i>预览</a>
+											</td>
 
 										</tr>
 
@@ -1156,31 +1130,21 @@
 
 											<td><input type="checkbox" class="checkboxes" value="1" /></td>
 
-											<td>weep</td>
+											<td>新会员</td>
 
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+											<td class="hidden-480">加入 新 会员 </td>
 
-											<td><span class="label label-success">Approved</span></td>
+											<td>营销活动</td>
 
-											<td>shuxer</td>
+											<td><a href="#">http://www.google.com.hk</a></td>
 
-											<td>shuxer</td>
+											<td><img src="media/image/4.jpg" class="img-polaroid" style="width: 80px; height: 80px;"></td>
 
-										</tr>
-
-										<tr class="odd gradeX">
-
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-
-											<td>coop</td>
-
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">good@gmail.com</a></td>
-
-											<td><span class="label label-success">Approved</span></td>
-
-											<td>shuxer</td>
-
-											<td>shuxer</td>
+											<td>
+												<a href="#" class="btn mini black"><i class="icon-trash"></i>Delete</a>
+												<a href="#" class="btn mini purple"><i class="icon-edit"></i>Edit</a>
+												<a href="#" class="btn mini blue"><i class="icon-share"></i>预览</a>
+											</td>
 
 										</tr>
 
@@ -1188,31 +1152,21 @@
 
 											<td><input type="checkbox" class="checkboxes" value="1" /></td>
 
-											<td>pppol</td>
+											<td>企业介绍</td>
 
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+											<td class="hidden-480">公司介绍 简介</td>
 
-											<td><span class="label label-success">Approved</span></td>
+											<td>企业组织</td>
 
-											<td>shuxer</td>
+											<td><a href="#">http://www.qq.com</a></td>
 
-											<td>shuxer</td>
+											<td><img src="media/image/5.jpg" class="img-polaroid" style="width: 80px; height: 80px;"></td>
 
-										</tr>
-
-										<tr class="odd gradeX">
-
-											<td><input type="checkbox" class="checkboxes" value="1" /></td>
-
-											<td>test</td>
-
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">good@gmail.com</a></td>
-
-											<td><span class="label label-success">Approved</span></td>
-
-											<td>shuxer</td>
-
-											<td>shuxer</td>
+											<td>
+												<a href="#" class="btn mini black"><i class="icon-trash"></i>Delete</a>
+												<a href="#" class="btn mini purple"><i class="icon-edit"></i>Edit</a>
+												<a href="#" class="btn mini blue"><i class="icon-share"></i>预览</a>
+											</td>
 
 										</tr>
 
@@ -1220,15 +1174,21 @@
 
 											<td><input type="checkbox" class="checkboxes" value="1" /></td>
 
-											<td>userwow</td>
+											<td>介绍</td>
 
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">userwow@gmail.com</a></td>
+											<td class="hidden-480">你好 首页 hi</td>
 
-											<td><span class="label label-inverse">Blocked</span></td>
+											<td>新闻资讯</td>
 
-											<td>shuxer</td>
+											<td><a href="#">http://www.google.com.hk</a></td>
 
-											<td>shuxer</td>
+											<td><img src="media/image/1.jpg" class="img-polaroid" style="width: 80px; height: 80px;"></td>
+
+											<td>
+												<a href="#" class="btn mini black"><i class="icon-trash"></i>Delete</a>
+												<a href="#" class="btn mini purple"><i class="icon-edit"></i>Edit</a>
+												<a href="#" class="btn mini blue"><i class="icon-share"></i>预览</a>
+											</td>
 
 										</tr>
 
@@ -1236,18 +1196,67 @@
 
 											<td><input type="checkbox" class="checkboxes" value="1" /></td>
 
-											<td>test</td>
+											<td>介绍</td>
 
-											<td class="hidden-480"><a href="mailto:userwow@gmail.com">test@gmail.com</a></td>
+											<td class="hidden-480">你好 首页 hi</td>
 
-											<td><span class="label label-success">Approved</span></td>
+											<td>新闻资讯</td>
 
-											<td>shuxer</td>
+											<td><a href="#">http://www.google.com.hk</a></td>
 
-											<td>shuxer</td>
+											<td><img src="media/image/1.jpg" class="img-polaroid" style="width: 80px; height: 80px;"></td>
+
+											<td>
+												<a href="#" class="btn mini black"><i class="icon-trash"></i>Delete</a>
+												<a href="#" class="btn mini purple"><i class="icon-edit"></i>Edit</a>
+												<a href="#" class="btn mini blue"><i class="icon-share"></i>预览</a>
+											</td>
 
 										</tr>
 
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>介绍</td>
+
+											<td class="hidden-480">你好 首页 hi</td>
+
+											<td>新闻资讯</td>
+
+											<td><a href="#">http://www.google.com.hk</a></td>
+
+											<td><img src="media/image/1.jpg" class="img-polaroid" style="width: 80px; height: 80px;"></td>
+
+											<td>
+												<a href="#" class="btn mini black"><i class="icon-trash"></i>Delete</a>
+												<a href="#" class="btn mini purple"><i class="icon-edit"></i>Edit</a>
+												<a href="#" class="btn mini blue"><i class="icon-share"></i>预览</a>
+											</td>
+
+										</tr>
+
+										<tr class="odd gradeX">
+
+											<td><input type="checkbox" class="checkboxes" value="1" /></td>
+
+											<td>介绍</td>
+
+											<td class="hidden-480">你好 首页 hi</td>
+
+											<td>新闻资讯</td>
+
+											<td><a href="#">http://www.google.com.hk</a></td>
+
+											<td><img src="media/image/1.jpg" class="img-polaroid" style="width: 80px; height: 80px;"></td>
+
+											<td>
+												<a href="#" class="btn mini black"><i class="icon-trash"></i>Delete</a>
+												<a href="#" class="btn mini purple"><i class="icon-edit"></i>Edit</a>
+												<a href="#" class="btn mini blue"><i class="icon-share"></i>预览</a>
+											</td>
+
+										</tr>
 									</tbody>
 
 								</table>

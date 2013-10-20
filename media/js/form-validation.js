@@ -87,6 +87,7 @@ var FormValidation = function () {
             });
 
             var form2 = $('#form_sample_2');
+            
             var error2 = $('.alert-error', form2);
             var success2 = $('.alert-success', form2);
 
@@ -113,7 +114,8 @@ var FormValidation = function () {
                         required: true
                     },
                     urlTxt: {
-                        required: true
+                        required: true,
+                        url: true
                     }
                 },
 
